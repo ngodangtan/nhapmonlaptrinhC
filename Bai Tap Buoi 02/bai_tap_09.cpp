@@ -1,14 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     float chieuCao, canNang, bmi;
-    printf("Nhap chieu cao: ");
-    scanf("%f", chieuCao);
-    printf("Nhap can nang: ");
-    scanf("%f", canNang);
-    bmi = canNang / (chieuCao*chieuCao);
-    printf("Chi so BMI cua ban la: %f",bmi);
+
+    cout << "Nhap chieu cao (m): ";
+    cin >> chieuCao;
+
+    cout << "Nhap can nang (kg): ";
+    cin >> canNang;
+
+    if (chieuCao <= 0) {
+        cout << "Chieu cao phai lon hon 0!" << endl;
+        return 1;
+    }
+
+    bmi = canNang / (chieuCao * chieuCao);
+    cout << "Chi so BMI cua ban la: " << bmi << endl;
     return 0;
 }
