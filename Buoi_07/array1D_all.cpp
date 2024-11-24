@@ -3,7 +3,6 @@
 //
 
 #include <iostream>
-#include <time.h>
 using namespace std;
 const int SIZE = 10;
 
@@ -59,16 +58,36 @@ Output:
 + sl_chan: int&
 */
 
+int demSlAmSlChan(int a[], int n, int& demChan) {
+  int demAm = 0;
+  demChan = 0;
+  for (int i = 0; i < n; i++) {
+    if (a[i] < 0) {
+      demAm ++;
+    }
+    if (a[i]%2 == 0) {
+      demChan++;
+    }
+  }
+  return  demAm;
+}
+
 int main()
 {
 
-  int a[SIZE] = {36,26,79,59,66,99,11,39};
+  int a[SIZE] = {36,-26,79,59,-66,99,11,39};
   int n = 8;
   cout <<  "Test: Y/c 1. In mang: " << endl;
   printArr(a, n);
   cout << "\nTest: Y/c 2. Tim gia tri 59(1): " << searchValue(a,n,59) << endl;
   cout << "Test: Y/c 2.Tim gia tri 31(1): " << searchValue(a,n,31) << endl;
-  cout << "Test: Y/c 2. In mang: " << endl;
-  cout << "Test: Y/c 2. In mang: " << endl;
+
+  cout << "Test: Y/c 3. Dem gia tri am va dem gia tri chan: " << endl;
+  int am,chan;
+  am = demSlAmSlChan(a,n,chan);
+  cout << "\tSo Luong am(2): " << am << endl;
+  cout << "\tSo Luong chan(3): " << chan << endl;
+
+  cout << "Test: Y/c 2" << endl;
   return 0;
 }
