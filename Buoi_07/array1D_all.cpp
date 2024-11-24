@@ -50,12 +50,13 @@ bool searchValue(int a[], int n, int value) {
   return false;
 }
 
-/* Yeu cau: Viet ham dem cac gia tri am, duong co trong mang ?
+/* Yeu cau: Viet ham dem cac gia tri am, chan co trong mang ?
 Input:
 + a[] int
 + n: int
 Output:
-+ return bool
++ return sl_am
++ sl_chan: int&
 */
 
 int main()
