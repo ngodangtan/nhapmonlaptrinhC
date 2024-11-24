@@ -72,6 +72,24 @@ int demSlAmSlChan(int a[], int n, int& demChan) {
   return  demAm;
 }
 
+/* Yeu cau: Viet ham max ?
+Input:
++ a[] int
++ so luongn: int
+Output:
++ return gia tri max trong mang
+*/
+
+int maxArr(int a[], int n) {
+  int m = a[0];
+  for (int i = 1; i < n; i++) {
+    if (a[i] > m) {
+      m = a[i];
+    }
+  }
+  return m;
+}
+
 int main()
 {
 
@@ -88,6 +106,6 @@ int main()
   cout << "\tSo Luong am(2): " << am << endl;
   cout << "\tSo Luong chan(3): " << chan << endl;
 
-  cout << "Test: Y/c 2" << endl;
+  cout << "Test: Y/c 4. Tim max(99) =" << maxArr(a,n) << endl;
   return 0;
 }
