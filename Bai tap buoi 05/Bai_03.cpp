@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isUocSo(int : n)
+bool isUocSo(int n, int i)
 {
     if (n % i == 0)
     {
@@ -17,7 +17,7 @@ int main()
     cin >> n;
     for (int i = 0; i <= sqrt(n); i++)
     {
-        if (isUocSo(i))
+        if (isUocSo(n,i))
         {
             tong += i;
             tich *= i;

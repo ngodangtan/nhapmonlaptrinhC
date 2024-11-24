@@ -33,19 +33,41 @@ void autoArr(int a[], int& n) {
   }
 }
 
-// Yeu cau: Viet ham tim kiem mot gia tri co trong mang hay khong ?
+/* Yeu cau: Viet ham tim kiem mot gia tri co trong mang hay khong ?
+Input:
++ a[] int
++ n: int
+Output:
++ return bool
+*/
+
+bool searchValue(int a[], int n, int value) {
+  for (int i = 0; i < n; i++) {
+    if (a[i] == value) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/* Yeu cau: Viet ham dem cac gia tri am, duong co trong mang ?
+Input:
++ a[] int
++ n: int
+Output:
++ return bool
+*/
 
 int main()
 {
-  srand(time(0));
-  int b[SIZE];
-  int m = 0;
-  //cinArr(b, m);
-  autoArr(b,m);
-  printArr(b, m);
 
-  int a[SIZE] = {36,26,79,59,66};
-  int n = 5;
+  int a[SIZE] = {36,26,79,59,66,99,11,39};
+  int n = 8;
+  cout <<  "Test: Y/c 1. In mang: " << endl;
   printArr(a, n);
+  cout << "\nTest: Y/c 2. Tim gia tri 59(1): " << searchValue(a,n,59) << endl;
+  cout << "Test: Y/c 2.Tim gia tri 31(1): " << searchValue(a,n,31) << endl;
+  cout << "Test: Y/c 2. In mang: " << endl;
+  cout << "Test: Y/c 2. In mang: " << endl;
   return 0;
 }

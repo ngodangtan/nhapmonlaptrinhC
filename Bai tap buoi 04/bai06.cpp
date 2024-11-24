@@ -8,7 +8,7 @@ int main() {
    cin >> a;
    cout << "Nhap so b: " << endl;
    cin >> b;
-   while b != 0 {
+   while (b != 0) {
     int temp = b;
     b = a % b;
     a = temp;
