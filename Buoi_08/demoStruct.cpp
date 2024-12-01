@@ -13,6 +13,10 @@ struct NhanVien{
   float luongHangThang;
 };
 
+// Bai tap ve
+// 1 Viet ham nhap du cho kieu du lieu NhanVien
+// 2 Viet ham kieu nhan vien
+
 int main() {
   int x;
   NhanVien nv;

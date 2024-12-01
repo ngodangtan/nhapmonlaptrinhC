@@ -14,6 +14,12 @@ void printToaDo(ToaDo a) {
   cout << "(" << a.x << "; " << a.y << ")" << endl;
 }
 
+void cinToaDo(ToaDo& a) {
+  cout << "Nhap lan luot hoanh do (x) va tung do (y): ";
+  cin >> a.x >> a.y;
+}
+
+
 int main() {
   int x = 20;
   cout << x << endl;
@@ -25,8 +31,7 @@ int main() {
   printToaDo(b);
 
   ToaDo c;
-  cout << "Nhap lan luot hoanh do (x) va tung do (y): " << endl;
-  cin >> c.x >> c.y;
+  cinToaDo(c);
   printToaDo(c);
   return 0;
 }
