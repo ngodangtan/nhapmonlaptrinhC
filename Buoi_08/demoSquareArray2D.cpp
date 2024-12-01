@@ -9,6 +9,18 @@ const int Size = 10;
 
 // Note: Duong cheo chinh, duong cheo phu chi co o square array
 
+void printCheoChinhArray(int a[][Size], int n) {
+    cout << "\nSquare Array[" << n << "][" << n << "]" << endl;
+    cout << "Duong cheo chinh la: ";
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == j) {
+                cout << a[i][j] << "    ";
+            }
+        }
+    }
+}
+
 void printSquareArray(int a[][Size], int n) {
     cout << "\nSquare Array[" << n << "][" << n << "]" << endl;
     for (int i = 0; i < n; i++) {
@@ -30,5 +42,6 @@ int main() {
   int n = 4;
 
   printSquareArray(a, n);
+  printCheoChinhArray(a, n);
   return 0;
 }
