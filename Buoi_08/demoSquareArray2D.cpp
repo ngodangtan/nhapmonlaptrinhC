@@ -9,5 +9,6 @@ const int Size = 10;
 
 int main() {
   int a[Size][Size];
+  int n = 0;
   return 0;
 }
