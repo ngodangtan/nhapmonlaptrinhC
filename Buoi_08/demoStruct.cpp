@@ -15,7 +15,7 @@ struct NhanVien{
 
 // Bai tap ve
 // 1 Viet ham nhap du cho kieu du lieu NhanVien
-// 2 Viet ham kieu nhan vien
+// 2 Viet ham xuat kieu du lieu nhan vien
 
 int main() {
   int x;
