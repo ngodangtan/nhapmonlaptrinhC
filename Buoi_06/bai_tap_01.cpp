@@ -47,7 +47,7 @@ bool kiemTraSoCP(int n)
     // Buoc 2: (i=0)^2 , 1,2,3,4..     == n
     for (int i = 0; i * i <= n; i++)
     {
-        if (i *i = n)
+        if (i *i == n)
             return true;
     }
     return false;
